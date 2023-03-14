@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16b44d3bb6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>IP address tracker</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
+
+</head>
+<body>
+        <div class="ip-input">
+            <h1>IP Address Tracker</h1>
+            <div class="search">
+                <input type="text" id="search" placeholder="search for any IP address of domain">
+                <i class="fa-solid fa-magnifying-glass" id="search-btn" onclick="searching()"></i>
+            </div>
+        </div>
+        <div class="info info-hidden" id="info-con">
+            <div id="ip-address" class="info-child">
+                <h3>IP ADDRESS</h3>
+                <h1 id="info-ip"></h1>
+            </div>
+            <hr>
+            <div id="ip-address" class="info-child">
+                <h3>LOCATION</h3>
+                <h1 id="info-location"></h1>
+            </div>
+            <hr>
+            <div id="ip-address" class="info-child">
+                <h3>TIMEZONE</h3>
+                <h1 id="info-timezone"></h1>
+            </div>
+            <hr>
+            <div id="ip-address" class="info-child">
+                <h3>ISP</h3>
+                <h1 id="info-isp"></h1>
+            </div>            
+        </div>
+        <div id="map"></div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

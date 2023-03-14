@@ -1,0 +1,120 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ip input styles */
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: white;
+}
+.ip-input{
+    width: 100%;
+    height: 300px;
+    background-color: cornflowerblue;
+    background-image: url('./images/pattern-bg-desktop.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 0 5px 5px 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#search{
+    width: 500px;
+    height: 42px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+}
+
+/* information styles */
+
+.info h1{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+.info{
+    display: flex;
+    width: 80%;
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 20px;
+    position:absolute;
+    left: 8%;
+    top: 40%;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+    z-index: 3;
+}
+
+.info-hidden{
+    display: none;
+}
+
+.info-child{
+    width: 20%;
+}
+.info h3{
+    font-size: 12px;
+    color: hsl(0, 0%, 17%);
+}
+
+/* map styles */
+
+#map {
+    height: 70vh;
+    z-index: 1;
+}
+
+
+
+
+/* responsive design */
+@media only screen and (max-width: 600px) {
+    /* ip input  */
+    .ip-input{
+        background-image: url("./images/pattern-bg-mobile.png");
+    }
+    #search{
+        width: 200px;
+    }
+    /* information */
+    .info{
+        flex-direction: column;
+        width: 60%;
+        left: 15%;
+        padding: 20px;
+    }
+    .info-child{
+        width: 100%;
+    }
+    /* map  */
+    #map{
+        height: 100vh;
+    }
+
+  }
